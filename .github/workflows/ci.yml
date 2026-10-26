@@ -6,22 +6,16 @@ on:
   push:
     branches: [main]
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 permissions: {}
 
 jobs:
-  pr-title:
-    if: github.event_name == 'pull_request'
-    uses: alterworld-hub/.github/.github/workflows/pr-title.yml@v0
-    permissions:
-      pull-requests: read
-
-  secrets-scan:
-    uses: alterworld-hub/.github/.github/workflows/secrets-scan.yml@v0
-    permissions:
-      contents: read
-
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: read
     steps:
@@ -36,31 +30,10 @@ jobs:
       - run: npm run typecheck
       - run: helm lint deploy/chart --set host=example.test --set image.tag=ci
 
-  # PR: build only. main: build + push sha-<short>.
-  image:
+  service:
     needs: check
-    uses: alterworld-hub/.github/.github/workflows/container.yml@v0
-    permissions:
-      contents: read
-      packages: write
-    with:
-      push: ${{ github.event_name == 'push' }}
-
-  release:
-    if: github.event_name == 'push'
-    needs: check
-    uses: alterworld-hub/.github/.github/workflows/release.yml@v0
+    uses: alterworld-hub/.github/.github/workflows/service.yml@v0
     permissions:
       contents: write
       pull-requests: write
-
-  release-image:
-    needs: release
-    if: needs.release.outputs.release_created == 'true'
-    uses: alterworld-hub/.github/.github/workflows/container.yml@v0
-    permissions:
-      contents: read
       packages: write
-    with:
-      ref: ${{ needs.release.outputs.sha }}
-      version: ${{ needs.release.outputs.version }}
