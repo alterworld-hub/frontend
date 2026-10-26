@@ -20,7 +20,6 @@ Conventions: [alterworld-hub/.github](https://github.com/alterworld-hub/.github/
 | FS | read-only root works; runs as uid 65532 |
 
 ## Delivery
-- PR: lint, build, typecheck, image build (no push).
-- `main`: image `ghcr.io/alterworld-hub/frontend:sha-<short>`; release-please PR.
-- Release `vX.Y.Z`: image `X.Y.Z`, `X.Y`. Chart in `deploy/chart`, version synced by release-please.
+Standard `service.yml` pipeline (see [.github](https://github.com/alterworld-hub/.github)). Repo-specific: `check` job only.
+- Chart in `deploy/chart`; version synced by release-please.
 - Deploy: by digest via `gitops`.
