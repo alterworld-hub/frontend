@@ -15,7 +15,7 @@ export const Route = createFileRoute('/')({
 function Home() {
   const { node, version, renderedAt } = Route.useLoaderData()
   return (
-    <main>
+    <main aria-label="node status">
       <h1>alterworld</h1>
       <p>event platform node</p>
       <p>
