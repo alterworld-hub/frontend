@@ -17,6 +17,7 @@ function Home() {
   return (
     <main>
       <h1>alterworld</h1>
+      <p>event platform node</p>
       <p>
         node <code>{node}</code> · frontend <code>{version}</code>
       </p>
