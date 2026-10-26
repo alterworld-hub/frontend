@@ -1,0 +1,7 @@
+*
+!package.json
+!package-lock.json
+!rsbuild.config.ts
+!tsconfig.json
+!src/
+src/routeTree.gen.ts

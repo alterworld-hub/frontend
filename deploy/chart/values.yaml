@@ -1,0 +1,16 @@
+image:
+  repository: ghcr.io/alterworld-hub/frontend
+  # Deploy by digest. Tag is used only if digest is empty.
+  digest: ""
+  tag: ""
+
+# Public host, e.g. app.<node-domain>. Required.
+host: ""
+# Node path shown in UI, e.g. local, root/org-a/site-1.
+nodePath: ""
+
+replicas: 1
+
+resources:
+  requests: { cpu: 10m, memory: 48Mi }
+  limits: { memory: 160Mi }
