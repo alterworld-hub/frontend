@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/alterworld-hub/frontend/compare/v0.3.0...v0.3.1) (2026-10-26)
+
+
+### Bug Fixes
+
+* add meta description ([#10](https://github.com/alterworld-hub/frontend/issues/10)) ([7743a9c](https://github.com/alterworld-hub/frontend/commit/7743a9cbfd1b878a208906261d9aa38362b58778))
+
 ## [0.3.0](https://github.com/alterworld-hub/frontend/compare/v0.2.0...v0.3.0) (2026-10-26)
 
 
