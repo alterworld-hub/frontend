@@ -1,6 +1,9 @@
 apiVersion: v2
 name: frontend
 description: alterworld web UI (SSR)
+home: https://github.com/alterworld-hub/frontend
+sources:
+  - https://github.com/alterworld-hub/frontend
 type: application
 version: 0.3.2
 appVersion: 0.3.2
