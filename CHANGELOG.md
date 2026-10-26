@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.4](https://github.com/alterworld-hub/frontend/compare/v0.3.3...v0.3.4) (2026-10-26)
+
+
+### Bug Fixes
+
+* **chart:** zero-downtime rollouts ([#16](https://github.com/alterworld-hub/frontend/issues/16)) ([707ab2b](https://github.com/alterworld-hub/frontend/commit/707ab2bbcdc0bc12851771421fafc58b431c6b89))
+
 ## [0.3.3](https://github.com/alterworld-hub/frontend/compare/v0.3.2...v0.3.3) (2026-10-26)
 
 
