@@ -4,6 +4,7 @@ import { createServerFn } from '@tanstack/react-start'
 const getNode = createServerFn().handler(() => ({
   node: process.env.NODE_PATH_ID ?? 'unknown',
   version: process.env.APP_VERSION ?? 'dev',
+  renderedAt: new Date().toISOString(),
 }))
 
 export const Route = createFileRoute('/')({
@@ -12,12 +13,15 @@ export const Route = createFileRoute('/')({
 })
 
 function Home() {
-  const { node, version } = Route.useLoaderData()
+  const { node, version, renderedAt } = Route.useLoaderData()
   return (
     <main>
       <h1>alterworld</h1>
       <p>
         node <code>{node}</code> · frontend <code>{version}</code>
+      </p>
+      <p>
+        rendered <time dateTime={renderedAt}>{renderedAt}</time>
       </p>
     </main>
   )
