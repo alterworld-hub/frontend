@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/alterworld-hub/frontend/compare/v0.1.0...v0.2.0) (2026-10-26)
+
+
+### Features
+
+* show server render time on home page ([#6](https://github.com/alterworld-hub/frontend/issues/6)) ([303fcd5](https://github.com/alterworld-hub/frontend/commit/303fcd55c1fda6cbd6fd61b59c0bef634987a924))
+
 ## 0.1.0 (2026-10-26)
 
 
