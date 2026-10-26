@@ -32,7 +32,7 @@ jobs:
 
   service:
     needs: check
-    uses: alterworld-hub/.github/.github/workflows/service.yml@feat/service-workflow
+    uses: alterworld-hub/.github/.github/workflows/service.yml@v0
     permissions:
       contents: write
       pull-requests: write
