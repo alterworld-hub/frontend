@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/alterworld-hub/frontend/compare/v0.2.0...v0.3.0) (2026-10-26)
+
+
+### Features
+
+* add subtitle to home page ([#8](https://github.com/alterworld-hub/frontend/issues/8)) ([f3a65fe](https://github.com/alterworld-hub/frontend/commit/f3a65feb8bca7958546b70a5e1df9c78b88ab2d7))
+
 ## [0.2.0](https://github.com/alterworld-hub/frontend/compare/v0.1.0...v0.2.0) (2026-10-26)
 
 
