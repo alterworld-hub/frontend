@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/alterworld-hub/frontend/compare/v0.3.1...v0.3.2) (2026-10-26)
+
+
+### Bug Fixes
+
+* label main landmark on home page ([#12](https://github.com/alterworld-hub/frontend/issues/12)) ([238fca1](https://github.com/alterworld-hub/frontend/commit/238fca1be7fe06ec667045e94dd1e3c659d2fb3d))
+
 ## [0.3.1](https://github.com/alterworld-hub/frontend/compare/v0.3.0...v0.3.1) (2026-10-26)
 
 
