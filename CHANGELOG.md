@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/alterworld-hub/frontend/compare/v0.3.2...v0.3.3) (2026-10-26)
+
+
+### Bug Fixes
+
+* **chart:** link chart package to repository ([#14](https://github.com/alterworld-hub/frontend/issues/14)) ([bf0ae6f](https://github.com/alterworld-hub/frontend/commit/bf0ae6fee91c47fac34ca2e24f1bac5c90fc37be))
+
 ## [0.3.2](https://github.com/alterworld-hub/frontend/compare/v0.3.1...v0.3.2) (2026-10-26)
 
 
