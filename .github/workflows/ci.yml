@@ -37,3 +37,5 @@ jobs:
       contents: write
       pull-requests: write
       packages: write
+    secrets:
+      BOT_PRIVATE_KEY: ${{ secrets.BOT_PRIVATE_KEY }}
