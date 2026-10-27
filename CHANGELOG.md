@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/alterworld-hub/frontend/compare/v0.3.4...v0.4.0) (2026-10-27)
+
+
+### Features
+
+* floating ui base with color schemes and localization scaffold ([#21](https://github.com/alterworld-hub/frontend/issues/21)) ([5e8ca79](https://github.com/alterworld-hub/frontend/commit/5e8ca790df2941bbe9486ff26c37944be649f5e5))
+
 ## [0.3.4](https://github.com/alterworld-hub/frontend/compare/v0.3.3...v0.3.4) (2026-10-26)
 
 
