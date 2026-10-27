@@ -4,5 +4,5 @@ import { tanstackStart } from '@tanstack/react-start/plugin/rsbuild'
 
 export default defineConfig({
   server: { port: 3000 },
-  plugins: [pluginReact(), tanstackStart({ srcDirectory: 'src' })],
+  plugins: [pluginReact(), tanstackStart({ srcDirectory: 'src/app' })],
 })

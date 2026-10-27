@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["src/**", "*.ts", "*.json", "!src/routeTree.gen.ts", "!package-lock.json"]
+    "includes": ["src/**", "*.ts", "*.json", "!src/app/routeTree.gen.ts", "!package-lock.json"]
   },
   "formatter": {
     "indentStyle": "space",

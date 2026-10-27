@@ -8,8 +8,14 @@ Conventions: [alterworld-hub/.github](https://github.com/alterworld-hub/.github/
 | | |
 |---|---|
 | `just dev` | Dev server on :3000 |
-| `just check` | lint, build, typecheck, chart lint (same as CI) |
+| `just check` | lint (Biome, Steiger), build, typecheck, chart lint (same as CI) |
 | `just image` | Build and run the container on :3000 |
+
+## Structure
+[Feature-Sliced Design](https://feature-sliced.design): `src/app` (routing, document shell; TanStack Start `srcDirectory`), `src/pages/<page>`, later `widgets`, `features`, `entities`, `shared`.
+- Routes in `src/app/routes` are thin: they import a page through its public API (`~/pages/<page>`).
+- A layer imports only from layers below it; slices only through their `index.ts`.
+- Enforced by [Steiger](https://github.com/feature-sliced/steiger) in `npm run lint`; a violation fails CI.
 
 ## Runtime
 | | |
