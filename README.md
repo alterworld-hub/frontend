@@ -17,6 +17,13 @@ Conventions: [alterworld-hub/.github](https://github.com/alterworld-hub/.github/
 - A layer imports only from layers below it; slices only through their `index.ts`.
 - Enforced by [Steiger](https://github.com/feature-sliced/steiger) in `npm run lint`; a violation fails CI.
 
+## UI
+- Styles: plain CSS next to the component, [BEM](https://en.bem.info/methodology/naming-convention/) class names (`block__element--modifier`), block = component.
+- Design tokens in `src/app/styles/tokens.css`; components use only `var(--…)`. Colors are `light-dark(light, dark)`.
+- Color scheme: `system` (OS) by default; `light`/`dark` stored in cookie `theme`, rendered as `<html data-theme>` on the server (no flash).
+- Locale: cookie `locale`, else `Accept-Language`, else `en`. Messages in `src/shared/i18n/messages/<locale>.ts`; `ru` is typed by `en`, so a missing key fails typecheck. Use `useT()`.
+- Floating layout: header and content are elevated islands (`--shadow-float`, `--radius`) off the screen edges.
+
 ## Runtime
 | | |
 |---|---|

@@ -1,0 +1,32 @@
+/* Color scheme: `system` follows the OS; data-theme on <html> forces one.
+   Every color is light-dark(light, dark), resolved by color-scheme. */
+:root {
+  color-scheme: light dark;
+
+  --color-bg: light-dark(#f2f2fa, #0f1020);
+  --color-surface: light-dark(#ffffff, #1a1b33);
+  --color-glass: light-dark(rgb(255 255 255 / 0.72), rgb(26 27 51 / 0.72));
+  --color-border: light-dark(#e1e1ee, #2a2b4a);
+  --color-text: light-dark(#1b1c33, #e8e8f5);
+  --color-muted: light-dark(#5d5e80, #9a9bc0);
+  --color-accent: light-dark(#5b4be0, #7c6cff);
+  --color-on-accent: #ffffff;
+  --color-shadow: light-dark(rgb(27 28 51 / 0.1), rgb(0 0 0 / 0.45));
+
+  --shadow-float: 0 1px 2px var(--color-shadow), 0 12px 32px var(--color-shadow);
+  --radius: 20px;
+  --radius-pill: 999px;
+  --gap: 16px;
+  --header-height: 64px;
+  --content-width: 960px;
+  --font: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
