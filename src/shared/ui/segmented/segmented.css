@@ -1,0 +1,46 @@
+.segmented {
+  display: inline-flex;
+  gap: 2px;
+  margin: 0;
+  padding: 3px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-bg);
+}
+
+.segmented__legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.segmented__option {
+  padding: 4px 12px;
+  font: inherit;
+  font-size: 13px;
+  color: var(--color-muted);
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-pill);
+}
+
+.segmented__option:hover {
+  color: var(--color-text);
+}
+
+.segmented__option:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.segmented__option--active {
+  color: var(--color-on-accent);
+  background: var(--color-accent);
+}
+
+.segmented__option--active:hover {
+  color: var(--color-on-accent);
+}

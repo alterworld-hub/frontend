@@ -1,0 +1,31 @@
+.header {
+  position: sticky;
+  top: calc(var(--gap) + env(safe-area-inset-top, 0px));
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--content-width);
+  margin: var(--gap) auto 0;
+  padding: 8px 8px 8px 20px;
+  background: var(--color-glass);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-float);
+  backdrop-filter: blur(12px);
+}
+
+.header__brand {
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.header__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
