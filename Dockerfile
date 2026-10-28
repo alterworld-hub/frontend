@@ -1,5 +1,5 @@
 # Build natively: output is plain JS, so no emulation is needed for other platforms.
-FROM --platform=$BUILDPLATFORM docker.io/library/node:24-slim AS build
+FROM --platform=$BUILDPLATFORM docker.io/library/node:26-slim AS build
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN --mount=type=cache,target=/root/.npm npm ci
